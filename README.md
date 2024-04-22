@@ -32,13 +32,13 @@ Start `producer-service` with:
 ./gradlew :producer-service:quarkusRun
 ```
 
-### Publish and consume events
+### Produce and consume messages
 In another terminal, start listening on the `test` topic:
 ```commandline
 curl http://0.0.0.0:8880/consume/test
 ```
 
-Publish messages into the `test` topic:
+Produce messages into the `test` topic:
 ```commandline
 curl -X POST -H "Content-Type: application/json" -d '{"message": "Hello, World!"}' http://localhost:8881/produce/test
 curl -X POST -H "Content-Type: application/json" -d '{"message": "Goodbye, World!"}' http://localhost:8881/produce/test
