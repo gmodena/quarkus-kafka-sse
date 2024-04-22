@@ -4,7 +4,7 @@ A prototype to demo integrating Quarkus with Kafka and Server-Sent Events (SSE).
 
 This repo contain two services:
 - `consumer-service`, that exposes a `/consume/<topic>`: a service that listens to a kafka topic and sends the messages to a SSE endpoint.
-- `producer-service`, that exposes a `/produce/<topic>` a service that publishes messages to a kafka topic.
+- `producer-service`, that exposes a `/produce/<topic>`: a service that publishes messages to a kafka topic.
 
 Both services expose metrics via Prometheus, and log in ECS format.
 
