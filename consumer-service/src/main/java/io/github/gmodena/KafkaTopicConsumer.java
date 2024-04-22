@@ -14,7 +14,7 @@ import java.util.Properties;
 
 
 @ApplicationScoped
-public class KafkaTopicMessageConsumer {
+public class KafkaTopicConsumer {
     private static final int CONSUMER_TIMEOUT_MS = 100;
 
     @ConfigProperty(name = "kafka.bootstrap.servers")
@@ -36,7 +36,7 @@ public class KafkaTopicMessageConsumer {
     String valueDeserializer;
 
     @Inject
-    public KafkaTopicMessageConsumer() {
+    public KafkaTopicConsumer() {
     }
 
     private Properties getKafkaConsumerProperties() {

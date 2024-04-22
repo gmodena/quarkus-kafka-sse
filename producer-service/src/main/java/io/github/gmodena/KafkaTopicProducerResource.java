@@ -17,7 +17,7 @@ public class KafkaTopicProducerResource {
     MeterRegistry registry;
 
     @Inject
-    KafkaTopicMessageProducer kafkaProducer;
+    KafkaTopicProducer kafkaProducer;
 
     @POST
     @Consumes(MediaType.APPLICATION_JSON)

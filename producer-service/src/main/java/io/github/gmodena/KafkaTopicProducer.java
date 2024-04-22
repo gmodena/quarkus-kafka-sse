@@ -10,7 +10,7 @@ import org.eclipse.microprofile.reactive.messaging.Channel;
 import org.eclipse.microprofile.reactive.messaging.Emitter;
 
 @ApplicationScoped
-public class KafkaTopicMessageProducer {
+public class KafkaTopicProducer {
 
     @Inject
     @Channel("intake")

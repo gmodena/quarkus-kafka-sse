@@ -9,13 +9,13 @@ import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
 @QuarkusTest
-public class KafkaTopicStreamResourceTest {
+public class KafkaTopicConsumerResourceTest {
 
     @InjectMock
-    KafkaTopicMessageConsumer kafkaConsumer;
+    KafkaTopicConsumer kafkaConsumer;
 
     @Test
-    public void testStreamTopic() {
+    public void testConsumeAndStreamTopic() {
         String topic = "test-topic";
 
         Mockito.when(kafkaConsumer.receive(topic))
